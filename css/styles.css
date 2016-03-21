@@ -1,0 +1,8 @@
+#show-entry {
+  display: none;
+}
+
+.btn-warning {
+  outline: none !important;
+  border: none !important;
+}
