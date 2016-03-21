@@ -1,6 +1,4 @@
-/// <reference path="journal-interfaces.ts" />
-var Post = require('./../js/journal-interface.js').Post;
-var moment = require('moment');
+/// <reference path="journal-interface.ts" />
 
 $(document).ready(function(){
   $("form#new-post").submit(function(event){
@@ -8,7 +6,7 @@ $(document).ready(function(){
     var todayDate = $("#new-date").val();
     var postTitle = $("#new-post-title").val();
     var postEntry = $("#new-post-entry").val();
-    var newPost = new Post(postTitle, todayDate, postEntry);
+    var newPost = new MyJournal.Post(postTitle, todayDate, postEntry);
     var count = newPost.wordCount();
 
     $("#show-entry").show();
@@ -21,5 +19,5 @@ $(document).ready(function(){
   });
 });
 
-JQeury(ish) & Variables go here (to-do-create-tasks.ts)
-modules/ businessy logic can go here too(maybe?)
+// JQeury(ish) & Variables go here (file:to-do-create-tasks.ts)
+// modules/ businessy logic can go here too(maybe?)

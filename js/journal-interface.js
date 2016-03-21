@@ -1,9 +1,9 @@
-exports.Post = function(title, date, post) {
+exports.Post = function(title, date, body) {
   this.date = date;
   this.title = title;
-  this.post = post;
+  this.body = body;
 };
 
 exports.Post.prototype.wordCount = function(){
-  return this.post.split(' ').length;
+  return this.body.split(' ').length;
 };

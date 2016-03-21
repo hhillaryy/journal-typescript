@@ -3,9 +3,5 @@
   "compilerOptions": {
     "rootDir": "app",
     "out": "build/js/app.js"
-  },
-  "files": [
-    "app/browser-interface.ts",
-    "app/journal-interface.ts",
-    ]
+  }
 }
